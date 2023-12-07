@@ -7,6 +7,7 @@ import { defineConfig } from 'astro/config'
 export default defineConfig({
 	site: 'https://astronaut-xi.vercel.app',
 	integrations: [mdx(), sitemap()],
+	output: 'server',
 	adapter: vercel({
     webAnalytics: {
       enabled: true,
